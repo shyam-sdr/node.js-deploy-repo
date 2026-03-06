@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ci-cd-svc
+  labels:
+    app: alpha
+spec:
+  type: LoadBalancer
+  selector:
+    app: alpha
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
