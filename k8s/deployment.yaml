@@ -19,7 +19,7 @@ spec:
           image: 445567098528.dkr.ecr.ap-south-1.amazonaws.com/alpha:7-2e9c997
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           resources:
             requests:
               cpu: "100m"
